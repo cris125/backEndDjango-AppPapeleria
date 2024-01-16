@@ -10,6 +10,9 @@ urlpatterns = [
     path('refresh/', TokenRefreshView.as_view()),
     path('user/', views.UserCreateView.as_view()),
     path('user/<int:pk>/', views.UserDetailView.as_view()),
+
+    path('home/', views.ViewRegistroNoAut.as_view()),
+    path('home/<int:pk>/', views.ViewRegistroNoAut.as_view()),
     path('registro/', views.ViewRegistro.as_view()),
     path('registro/<int:pk>/', views.ViewRegistro.as_view()),
     path('ventas/',views.ViewVentas.as_view()),
